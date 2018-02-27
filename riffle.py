@@ -23,4 +23,15 @@ def mergeDecks(cardArray) :
           mergeList(firstDeck, secondDeck, cardArray)
 
 
+def merge(firstDeck, secondDeck, cardArray)
+    # the following are the next elements to be considered in the split lists.
+    first = 0
+    second = 0
+    j = 0
+
+    while first < len(firstDeck) and second < len(secondDeck) : 
+
+
+
+
 
