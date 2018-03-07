@@ -3,9 +3,11 @@
 write a method to tell us if a full deck of cards shuffledDeck is single riffle of two halves
 half1 and half2.
 """
+import numpy as np
+
 cardArray = np.array([1, 52, 1])
 
-def shuffledDeck( ) :
+#def shuffledDeck( ) :
      # what you need to is verify if it's actually part of the single riffle 
 
      # measure against 2 split arrays of the original 52 elements of the deck
@@ -23,7 +25,7 @@ def mergeDecks(cardArray) :
           mergeList(firstDeck, secondDeck, cardArray)
 
 
-def merge(firstDeck, secondDeck, cardArray)
+def merge(firstDeck, secondDeck, cardArray) :
     # the following are the next elements to be considered in the split lists.
     first = 0
     second = 0
@@ -52,4 +54,15 @@ def merge(firstDeck, secondDeck, cardArray)
 # create a binary search because this was previously sorted to determine whether card target is either in the first or second deck 
     # if so, then the card shuffle is a riffle shuffle
 def binary(values, low, high, target) :
-    if low <= high 
+    if low <= high :
+        mid = (low + high) // 2
+       
+        if values[mid] == target :
+            return mid
+        elif values[mid] < target :
+            return binary(values, mid + 1, high, target)
+        else :
+            return binary(values, mid -1, target)
+    # if the value isn't found :
+    else :
+        return -1
