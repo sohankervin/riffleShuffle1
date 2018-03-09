@@ -9,8 +9,10 @@ return True, if not, return False.
 
 import riffleShuffle1
 
-if in riffleShuffle1.binary() : 
-    return true
+cardValue =raw_input()
+
+while cardValue in riffleShuffle1.binary() : 
+    print "The card is part of a Riffle Shuffle!"
 
 
 
