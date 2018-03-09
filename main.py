@@ -7,12 +7,12 @@ return True, if not, return False.
 # measure against 2 split arrays of the original 52 elements of the deck
 
 
-import riffleShuffle1
+# import riffleShuffle1
 
-cardValue =raw_input()
+# cardValue =raw_input()
 
-while cardValue in riffleShuffle1.binary() : 
-    print "The card is part of a Riffle Shuffle!"
+# while cardValue in riffleShuffle1.binary() : 
+    # print "The card is part of a Riffle Shuffle!"
 
 
 
